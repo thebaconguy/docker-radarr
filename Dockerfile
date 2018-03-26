@@ -15,6 +15,7 @@ RUN \
  echo "**** install jq ****" && \
  apt-get update && \
  apt-get install -y \
+ 	python3 \
 	jq && \
  echo "**** install radarr ****" && \
  radarr_url=$(curl "http://radarr.aeonlucid.com/v1/update/${RADARR_BRANCH}/changes?os=linux" \
